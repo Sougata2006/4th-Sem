@@ -1,0 +1,193 @@
+DAA Practical Viva Questions and Answers
+
+1.  Binary Search 
+
+Q: What is the prerequisite for Binary Search? A: The
+    array must be sorted.
+
+Q: Why is Binary Search faster than Linear Search? A: It reduces the
+search space by half in every step.
+
+Q: Which technique does it use? A: Divide and Conquer.
+
+Q: Can Binary Search work on a linked list? A: No, because efficient
+random access is not available.
+
+------------------------------------------------------------------------
+
+2.  Merge Sort 
+
+Q: Why is Merge Sort called Divide and Conquer? A: It
+    divides the array, recursively sorts both halves, and merges them.
+
+Q: Is Merge Sort stable? A: Yes.
+
+Q: Is Merge Sort in-place? A: No.
+
+Q: Why is Merge Sort preferred for linked lists? A: Merging linked lists
+is efficient without shifting elements.
+
+------------------------------------------------------------------------
+
+3.  Quick Sort 
+
+Q: Which pivot is used in your program? A: The last
+    element.
+
+Q: Is Quick Sort stable? A: No.
+
+Q: Is Quick Sort in-place? A: Yes.
+
+Q: Why can Quick Sort become O(N²)? A: Poor pivot selection causes
+highly unbalanced partitions.
+
+------------------------------------------------------------------------
+
+4.  Find Min-Max 
+
+Q: Why use Divide and Conquer? A: It reduces
+    comparisons.
+
+Q: Can this be solved iteratively? A: Yes.
+
+------------------------------------------------------------------------
+
+5.  BFS 
+
+Q: Which data structure is used? A: Queue.
+
+Q: Why Queue? A: BFS visits vertices level by level (FIFO).
+
+Q: Can BFS find the shortest path? A: Yes, in an unweighted graph.
+
+Q: Does your implementation use recursion? A: No.
+
+------------------------------------------------------------------------
+
+6.  DFS 
+
+Q: Which data structure is used? A: Stack.
+
+Q: Can DFS be recursive? A: Yes.
+
+Q: BFS vs DFS? A: - BFS: Queue, level-wise traversal. - DFS:
+Stack/Recursion, depth-wise traversal.
+
+------------------------------------------------------------------------
+
+7.  Dijkstra 
+
+Q: Can it handle negative edge weights? A: No.
+
+Q: Which algorithm handles negative weights? A: Bellman-Ford.
+
+Q: Which technique is used? A: Greedy.
+
+------------------------------------------------------------------------
+
+8.  Bellman-Ford 
+
+Q: Can it handle negative edges? A: Yes.
+
+Q: Can it detect negative cycles? A: Yes.
+
+Q: Why relax edges V-1 times? A: A longest simple path contains at most
+V-1 edges.
+
+------------------------------------------------------------------------
+
+9.  Floyd-Warshall
+
+Q: Which problem does it solve? A: All-Pairs Shortest
+    Path.
+
+Q: Which technique is used? A: Dynamic Programming.
+
+Q: Can it handle negative edges? A: Yes.
+
+Q: Can it handle negative cycles? A: No.
+
+------------------------------------------------------------------------
+
+10. Prim’s Algorithm 
+
+Q: Which technique is used? A: Greedy.
+
+Q: What does it find? A: Minimum Spanning Tree (MST).
+
+Q: Can it work on directed graphs? A: No.
+
+------------------------------------------------------------------------
+
+11. Kruskal’s Algorithm 
+
+Q: Which data structure is used? A: Union-Find
+    (Disjoint Set).
+
+Q: Why sort edges? A: To select the smallest edge first.
+
+Q: How are cycles detected? A: Using Union-Find.
+
+------------------------------------------------------------------------
+
+12. Fractional Knapsack 
+
+Q: Which technique is used? A: Greedy.
+
+Q: Why sort by Profit/Weight ratio? A: It maximizes profit.
+
+Q: Can we take fractions of items? A: Yes.
+
+Q: Does Greedy work for 0/1 Knapsack? A: No.
+
+------------------------------------------------------------------------
+
+13. Graph Coloring 
+
+Q: Which technique is used? A: Backtracking.
+
+Q: Main rule? A: Adjacent vertices cannot have the same color.
+
+------------------------------------------------------------------------
+
+14. Hamiltonian Cycle 
+
+Q: Hamiltonian vs Euler Cycle? A:
+
+-   Hamiltonian: Visits every vertex once.
+-   Euler: Visits every edge once.
+
+Q: Technique? A: Backtracking.
+
+------------------------------------------------------------------------
+
+15. N-Queen 
+
+Q: Which technique is used? A: Backtracking.
+
+Q: What conditions are checked? A: Same column and both diagonals.
+
+------------------------------------------------------------------------
+
+16. Travelling Salesman Problem (TSP) 
+
+Q: Which technique is used? A:
+    Backtracking.
+
+Q: Why is it difficult? A: It explores many possible tours (factorial
+time).
+
+Q: Hamiltonian vs TSP? A: Hamiltonian checks existence of a cycle; TSP
+finds the minimum-cost cycle.
+
+------------------------------------------------------------------------
+
+17. 15 Puzzle 
+
+Q: Which technique is used in your program? A: Simulation.
+
+Q: Which algorithms solve it automatically? A: A, BFS, DFS, IDA.
+
+Q: What does 0 represent? A: The blank tile.
+
+------------------------------------------------------------------------
