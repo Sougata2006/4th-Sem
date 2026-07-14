@@ -1,150 +1,110 @@
-# 🧠 Prolog — Logic Programming Starter Kit
+PROLOG & AI VIVA QUESTIONS AND ANSWERS
 
-> A beginner-friendly collection of Prolog programs, concepts, and practice problems to make learning logic programming easier.
+BASIC PROLOG QUESTIONS
 
----
+Q1. What is Prolog? A. Prolog (PROgramming in LOGic) is a logic
+programming language mainly used in Artificial Intelligence.
 
-## 📚 What's Inside
+Q2. Why is Prolog called a declarative language? A. Because we specify
+WHAT to solve rather than HOW.
 
-| Category | What You'll Learn |
-|---|---|
-| **Facts & Syntax** | How Prolog represents knowledge |
-| **Rules & Queries** | Deriving new information from facts |
-| **Recursion** | Factorial, Fibonacci, GCD |
-| **List Operations** | Pattern matching, traversal |
-| **Family Trees** | Classic logic relationships |
-| **Graph Search** | Depth-first search (DFS) |
+Q3. What are Facts? A. Statements that are always true.
 
----
+Q4. What are Rules? A. Rules define relationships using facts.
 
-## 🗂️ Repository Structure
+Q5. What are Queries? A. Questions asked to Prolog.
 
-```
-prolog/
-│── LICENSE
-│── README.md
-│── dfs.pl          ← Depth-First Search
-│── even-odd.pl     ← Even/Odd number check
-│── fact.pl         ← Factorial
-│── fibo.pl         ← Fibonacci sequence
-│── gcd.pl          ← Greatest Common Divisor
-│── grandparent.pl  ← Grandparent relationship
-│── max.pl          ← Maximum of two numbers
-│── parent.pl       ← Parent relationship
-└── sibling.pl      ← Sibling relationship
-```
+Q6. What is a Predicate? A. Name of a fact or rule.
 
----
+Q7. What is Arity? A. Number of arguments of a predicate.
 
-## 🛠️ Requirements
+Q8. What is Backtracking? A. Prolog automatically tries another rule if
+one fails.
 
-Install **SWI-Prolog** to run these programs:
+Q9. What is Recursion? A. A predicate calling itself.
 
-- 🌐 Official Website: [SWI-Prolog](https://www.swi-prolog.org)
-- Available for Windows, macOS, and Linux
-- Free and open-source
+Q10. What is the Cut Operator (!)? A. Stops unnecessary backtracking.
 
----
+Q11. Difference between ‘=’ and ‘is’? A. ‘=’ performs unification, ‘is’
+evaluates arithmetic.
 
-## ▶️ How to Run
+PROGRAM BASED QUESTIONS
 
-### Step 1 — Download the Repository
+Factorial: Technique? Recursion. Base case? fact(0,1). 
 
-- Click the **Code** button on GitHub → **Download ZIP**
-- Extract the ZIP to a folder on your system
+Fibonacci: Two base cases because F(0)=0 and F(1)=1. 
 
-### Step 2 — Open SWI-Prolog
+GCD: Uses Euclid’s Algorithm.
 
-Launch the SWI-Prolog application after installing it.
+Even/Odd: Uses mod operator. 
 
-### Step 3 — Load a File
+Maximum: Cut stops checking further rules.
 
-```prolog
-?- consult('path/to/filename.pl').
-```
+Grade: Cut prevents checking lower grades. 
 
-**Example (Windows):**
-```prolog
-?- consult('C:/Users/YourName/Documents/prolog/fact.pl').
-```
+Sign: Output for 0 is zero.
 
-**Shorthand syntax:**
-```prolog
-?- ['C:/Users/YourName/Documents/prolog/fact.pl'].
-```
+Traffic Signal: Cut stops after finding correct action. 
 
-### Step 4 — Run a Query
+Parent: Relation between people. Grandparent: Parent of Parent. 
 
-```prolog
-?- fact(5, X).
-```
+Father/Mother: Uses parent(), male(), female(). 
 
-Expected output:
-```
-X = 120.
-```
+Sibling: X = Y prevents self-sibling.
 
----
+Member: Uses recursion. 
 
-## 🔍 Quick Examples
+Length: Base case is empty list. 
 
-### Factorial (`fact.pl`)
-```prolog
-?- fact(0, X).   % X = 1
-?- fact(5, X).   % X = 120
-```
+Reverse: Uses concatenation after reversing tail. 
 
-### Fibonacci (`fibo.pl`)
-```prolog
-?- fibo(7, X).   % X = 13
-```
+DFS: Uses Stack. 
 
-### GCD (`gcd.pl`)
-```prolog
-?- gcd(12, 8, X).  % X = 4
-```
+BFS: Uses Queue.
 
-### Even or Odd (`even-odd.pl`)
-```prolog
-?- even(4).   % true
-?- odd(7).    % true
-```
+ARTIFICIAL INTELLIGENCE QUESTIONS
 
-### Parent / Grandparent
-```prolog
-?- parent(tom, bob).      % Is tom bob's parent?
-?- grandparent(tom, ann). % Is tom ann's grandparent?
-```
+1.  What is AI? AI enables machines to perform tasks requiring human
+    intelligence.
 
-### Siblings
-```prolog
-?- sibling(bob, liz).   % Are bob and liz siblings?
-```
+2.  Examples: ChatGPT, Siri, Google Assistant, Self-driving Cars.
 
-### DFS (`dfs.pl`)
-```prolog
-?- dfs(start, goal, Path).  % Find a path using depth-first search
-```
+3.  Why is Prolog used in AI? Knowledge Representation, Rule-Based
+    Systems, Logical Reasoning, Expert Systems.
 
----
+4.  What is an Expert System? A program that solves problems using
+    expert knowledge.
 
-## 💡 Prolog Tips for Beginners
+5.  What is Knowledge Representation? Representing knowledge for
+    computer reasoning.
 
-- **Facts** end with a period: `parent(tom, bob).`
-- **Rules** use `:-` (means "if"): `grandparent(X, Z) :- parent(X, Y), parent(Y, Z).`
-- **Queries** start with `?-` in the REPL
-- Use `;` after a result to find more solutions
-- Use `trace.` to debug step-by-step
-- Use `halt.` to exit SWI-Prolog
+6.  What is Inference? Deriving new knowledge from facts and rules.
 
----
+7.  What is an Inference Engine? Applies rules to facts to reach
+    conclusions.
 
-## 🤝 Contributions
+8.  What is State Space Search? Searching possible states to reach a
+    goal.
 
-Feel free to use the code, improve it, or add new examples.
+9.  DFS vs BFS? DFS uses Stack and goes deep. BFS uses Queue and
+    explores level by level.
 
----
+10. What is Heuristic Search? Search guided by estimates (e.g. A*).
 
-## ⭐ Support
+11. What is Machine Learning? Learning from data instead of explicit
+    programming.
 
-If this repository helps you during labs or revision, consider giving it a star on GitHub. Every ⭐ helps others discover it too!
+12. AI vs ML? ML is a subset of AI.
+
+13. What is Deep Learning? ML using deep neural networks.
+
+14. What is NLP? AI field that processes human language.
+
+15. What is Computer Vision? AI field that understands images/videos.
+
+16. What is Robotics? Building intelligent robots.
+
+17. What is an Intelligent Agent? Entity that senses and acts.
+
+18. Why are BFS and DFS important? Used in path finding, puzzles, game
+    AI.
